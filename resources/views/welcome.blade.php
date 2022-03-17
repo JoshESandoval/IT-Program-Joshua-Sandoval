@@ -9,3 +9,7 @@
 @section('content')
 	<p>idkwhattoput</p>
 @stop
+
+@section('css')
+    <link rel="stylesheet" href="/css/admin_custom.css">
+@stop
