@@ -3,11 +3,11 @@
 @section('title', 'Welcome')
 
 @section('content_header')
-	<h1>Welcome b</h1>
+	<h1>Yeet Skrrrrrrrrrt</h1>
 @stop
 
 @section('content')
-	<p>idkwhattoput</p>
+	<p>We gon et gud</p>
 @stop
 
 @section('css')
