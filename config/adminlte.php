@@ -255,9 +255,9 @@ return [
         ],
         ['header' => 'account_settings'],
         [
-            'text' => 'profile',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
+            'text' => 'search',
+            'url'  => '',
+            'icon' => 'fas fa-fw fa-search',
         ],
         [
             'text' => 'change_password',
