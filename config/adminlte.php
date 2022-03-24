@@ -241,11 +241,11 @@ return [
             'type' => 'sidebar-menu-search',
             'text' => 'search',
         ],
-        /*[
+        [
             'text' => 'blog',
             'url'  => 'admin/blog',
             'can'  => 'manage-blog',
-        ],*/
+        ],
         [
             'text'        => 'pages',
             'url'         => 'admin/pages',
