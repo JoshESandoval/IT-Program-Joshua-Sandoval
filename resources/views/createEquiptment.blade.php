@@ -11,11 +11,11 @@
     <form  method="post" action="{{}}">
         @csrf
         <div>
-            Type
+            Type<br>
             <input type="input" class=" "name="Type" placeholder="tablet"/>
         </div>
 
-        <div>Manufacturer
+        <div>Manufacturer <br>
             <select class="btn btn-info" name="Type" id="TypeSelect">
                 <option value="Lenovo">Lenovo</option>
                 <option value="Apple">Apple</option>
