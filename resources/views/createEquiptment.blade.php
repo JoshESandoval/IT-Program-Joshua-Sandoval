@@ -8,7 +8,7 @@
 
 @section('content')
     <p>Edit Information to create Equiptment</p>
-    <form method="post" action="{{colsole.log()}}">
+    <form method="post" action="{{console.log()}}">
         @csrf 
         <x-adminlte-input name="Manufacturer" />
         <p>Type</p>
