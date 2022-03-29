@@ -8,10 +8,11 @@
 
 @section('content')
     <h1>Basic Info</h1>
+    <br>
     <form  method="post" action="{{}}">
         @csrf
         
-        <h3>Manufacturer</h3>
+        <h4>Manufacturer</h4>
         <select class="btn btn-info" name="Type" id="TypeSelect">
             <option value="Lenovo">Lenovo</option>
             <option value="Apple">Apple</option>
@@ -20,17 +21,18 @@
         </select>
         <br>
 
-        <h3>Category</h3>
+        <h4>Category</h4>
         <input type="input" name="Catagory" placeholder="Tablet"/>
 
         <h1>Specs</h1>
-        <h3>Display</h3>
+        <br>
+        <h4>Display</h4>
         <input type ="input" name="Display" placeholder="LED"/>
         <br>
 
-        <h3>Ram</h3>
+        <h4>Ram</h4>
         <select class="btn btn-info" name="Ram" id="RamSelect">
-             
+
             <option value ="16GB">16GB</option>
             <option value = "32GB">32GB</option>
             <option value = "64GB" >64GB</option>
@@ -39,7 +41,7 @@
         </select>
         <br>
 
-        <h3>Memory</h3>
+        <h4>Memory</h4>
         <select class="btn btn primary" name="Memory" id="MemorySelect">
             <option value = "500GB">
 
