@@ -23,9 +23,11 @@
 
         <h4>Category</h4>
         <input type="input" name="Catagory" placeholder="Tablet"/>
+        <br>
+        <br>
 
         <h1>Specs</h1>
-        <br>
+        
         <h4>Display</h4>
         <input type ="input" name="Display" placeholder="LED"/>
         <br>
@@ -41,11 +43,12 @@
         </select>
         <br>
 
-        <h4>Ram/h4>
+        <h4>Ram</h4>
         <select class="btn btn primary" name="Ram" id="RamSelect">
             <option value = "500GB">500GB</option>
         </select>
         <br>
+        
         <x-adminlte-button type="submit" label="Submit"/>
 
         
