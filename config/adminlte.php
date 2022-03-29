@@ -256,7 +256,7 @@ return [
         ['header' => 'account_settings'],
         [
             'text' => 'search',
-            'url'  => '',
+            'url'  => 'createEquiptment',
             'icon' => 'fas fa-fw fa-search',
         ],
         [
