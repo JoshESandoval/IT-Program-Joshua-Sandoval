@@ -8,11 +8,11 @@
 
 @section('content')
     <p>Edit Information to create Equiptment</p>
-    <form method="post" action="{{}}">
+    <form class="form-inline" method="post" action="{{}}">
         @csrf 
         <input type="input" class=" "name="Type" placeholder="tablet"/>
        
-        <div class="bg-info" >Manufacturer</div>
+        <div>Manufacturer</div>
         <select class="btn btn-info" name="Type" id="TypeSelect">
             <option value="Lenovo">Lenovo</option>
             <option value="Apple">Apple</option>
