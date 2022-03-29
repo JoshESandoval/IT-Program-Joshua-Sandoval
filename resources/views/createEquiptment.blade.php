@@ -43,10 +43,13 @@
         </select>
         <br>
         <br>
-        
+
         <h4>Ram</h4>
-        <select class="btn btn primary" name="Ram" id="RamSelect">
-            <option value = "500GB">500GB</option>
+        <select class="btn btn-info" name="Ram" id="RamSelect">
+            <option value = "4GB">4GB</option>
+            <option value = "8GB">8GB</option>
+            <option value = "16GB">16GB</option>
+            <option value = "32GB">32GB</option>
         </select>
         <br>
 
