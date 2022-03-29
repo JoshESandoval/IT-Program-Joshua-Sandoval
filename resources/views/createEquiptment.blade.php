@@ -10,9 +10,10 @@
     <p>Edit Information to create Equiptment</p>
     <form method="post" action="{{}}">
         @csrf 
-        <x-adminlte-input name="Manufacturer" />
-        <p>Type</p>
-        <select class="btn btn-primary" name="Type" id="TypeSelect">
+        <input type="input" class=" "name="Type" placeholder="tablet"/>
+       
+        <div class="bg-info" >Manufacturer</div>
+        <select class="btn btn-info" name="Type" id="TypeSelect">
             <option value="Lenovo">Lenovo</option>
             <option value="Apple">Apple</option>
             <option value="Dell">Dell</option>
