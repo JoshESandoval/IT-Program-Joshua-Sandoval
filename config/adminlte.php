@@ -250,7 +250,7 @@ return [
         [
             'text' =>'Homepage',
             'url'  => '',
-            'icon' => 'fa-regular fa-compas'
+            'icon' => 'fas fa-fw fa-compas'
         ],
         [
             'text' => 'search',
