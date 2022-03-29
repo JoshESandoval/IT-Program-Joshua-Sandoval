@@ -29,14 +29,22 @@
         <br>
 
         <h3>Ram</h3>
-        <select class="btn btn-info" name="Ram" id="RamSelect"> 
-            <option value ="16">16GB</option>
-            <option value ="32">32GB</option>
-            <option value ="64" >64GB</option>
-            <option value ="128">128GB</option>
-            <option value ="256">256GB</option>
+        <select class="btn btn-info" name="Ram" id="RamSelect">
+             
+            <option value ="16GB">16GB</option>
+            <option value = "32GB">32GB</option>
+            <option value = "64GB" >64GB</option>
+            <option value ="128GB">128GB</option>
+            <option value ="256GB">256GB</option>
         </select>
+        <br>
 
+        <h3>Memory</h3>
+        <select class="btn btn primary" name="Memory" id="MemorySelect">
+            <option value = "500GB">
+
+
+        
         <br>
         <x-adminlte-button type="submit" label="Submit"/>
 
