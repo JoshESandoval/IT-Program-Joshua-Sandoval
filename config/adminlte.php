@@ -246,7 +246,12 @@ return [
             'url'  => 'admin/blog',
             'can'  => 'manage-blog',
         ],
-        ['header' => 'account_settings'],
+        ['header' => 'Actions'],
+        [
+            'text' =>'Homepage',
+            'url'  => '',
+            'icon' => 'fa-regular fa-compas'
+        ],
         [
             'text' => 'search',
             'url'  => 'createEquiptment',
