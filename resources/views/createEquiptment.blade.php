@@ -20,5 +20,6 @@
         </select>
 
         <x-adminlte-button type="submit" label="Submit"/>
+    </form>
 @stop 
 
