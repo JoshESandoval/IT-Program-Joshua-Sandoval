@@ -52,6 +52,7 @@
             <option value = "32GB">32GB</option>
         </select>
         <br>
+        <br>
 
         <input class="btn btn-success" type="submit" label="Submit"/>
 
