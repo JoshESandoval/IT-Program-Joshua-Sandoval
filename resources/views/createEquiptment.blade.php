@@ -30,8 +30,8 @@
         <input type ="input" name="Display" placeholder="LED"/>
         <br>
 
-        <h4>Ram</h4>
-        <select class="btn btn-info" name="Ram" id="RamSelect">
+        <h4>Memory</h4>
+        <select class="btn btn-info" name="Memory" id="MemorySelect">
 
             <option value ="16GB">16GB</option>
             <option value = "32GB">32GB</option>
@@ -41,12 +41,10 @@
         </select>
         <br>
 
-        <h4>Memory</h4>
-        <select class="btn btn primary" name="Memory" id="MemorySelect">
-            <option value = "500GB">
-
-
-        
+        <h4>Ram/h4>
+        <select class="btn btn primary" name="Ram" id="RamSelect">
+            <option value = "500GB">500GB</option>
+        </select>
         <br>
         <x-adminlte-button type="submit" label="Submit"/>
 
