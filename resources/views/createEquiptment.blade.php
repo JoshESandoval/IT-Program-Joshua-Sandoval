@@ -23,6 +23,20 @@
         <h3>Category</h3>
         <input type="input" name="Catagory" placeholder="Tablet"/>
 
+        <h1>Specs</h1>
+        <h3>Display</h3>
+        <input type ="input" name="Display" placeholder="LED"/>
+        <br>
+
+        <h3>Ram</h3>
+        <select class="btn btn-info" name="Ram" id="RamSelect"> 
+            <option value ="16">16GB</option>
+            <option value ="32">32GB</option>
+            <option value ="64" >64GB</option>
+            <option value ="128">128GB</option>
+            <option value ="256">256GB</option>
+        </select>
+
         <br>
         <x-adminlte-button type="submit" label="Submit"/>
 
