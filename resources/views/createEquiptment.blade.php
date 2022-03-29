@@ -9,9 +9,9 @@
 @section('content')
     <h1>Basic Info</h1>
     <br>
-    <form  method="post" action="">
+    <form  method="post" action="{{}}">
         @csrf
-        
+
         <h4>Manufacturer</h4>
         <select class="btn btn-info" name="Type" id="TypeSelect">
             <option value="Lenovo">Lenovo</option>
@@ -53,6 +53,16 @@
         </select>
         <br>
         <br>
+
+        <h1>Invoice Information</h1>
+        <br>
+        <h4>Price</h4>
+        
+        <div class="input-group">
+            <div class="input-group-addon">$</div>
+            <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+            <div class="input-group-addon">.00</div>
+        </div>
 
         <input class="btn btn-success" type="submit" label="Submit"/>
 
