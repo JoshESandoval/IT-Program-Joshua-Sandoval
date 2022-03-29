@@ -1,9 +1,9 @@
- @extends('adminlte::page')
+@extends('adminlte::page')
 
- @section('title', 'Create Equiptment')
+@section('title', 'Create Equiptment')
 
- @section('content_header')
-    <h1> Create Equiptment </h1>
+@section('content_header')
+   <h1> Create Equiptment </h1>
 @stop
 
 @section('content')
@@ -19,6 +19,6 @@
             <option value="Microsoft">Microsoft</option>
         </select>
 
-        <x-adminlte-button type="submit" label="Submit">
+        <x-adminlte-button type="submit" label="Submit"/>
 @stop 
 
