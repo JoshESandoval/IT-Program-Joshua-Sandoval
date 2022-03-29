@@ -7,24 +7,26 @@
 @stop
 
 @section('content')
-    <p>Edit Information to create Equiptment</p>
+    <h1>Basic Info</h1>
     <form  method="post" action="{{}}">
         @csrf
-        <div>
-            Type<br>
-            <input type="input" class=" "name="Type" placeholder="tablet"/>
-        </div>
+        
+        <h3>Manufacturer</h3>
+        <select class="btn btn-info" name="Type" id="TypeSelect">
+            <option value="Lenovo">Lenovo</option>
+            <option value="Apple">Apple</option>
+            <option value="Dell">Dell</option>
+            <option value="Microsoft">Microsoft</option>
+        </select>
+        <br>
 
-        <div>Manufacturer <br>
-            <select class="btn btn-info" name="Type" id="TypeSelect">
-                <option value="Lenovo">Lenovo</option>
-                <option value="Apple">Apple</option>
-                <option value="Dell">Dell</option>
-                <option value="Microsoft">Microsoft</option>
-            </select>
-        </div>
+        <h3>Category</h3>
+        <input type="input" name="Catagory" placeholder="Tablet"/>
 
+        <br>
         <x-adminlte-button type="submit" label="Submit"/>
+
+        
     </form>
 @stop 
 
