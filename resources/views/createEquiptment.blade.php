@@ -49,7 +49,7 @@
         </select>
         <br>
 
-        <button class="btn btn-success" type="submit" label="Submit"/>
+        <input class="btn btn-success" type="submit" label="Submit"/>
 
         
     </form>
