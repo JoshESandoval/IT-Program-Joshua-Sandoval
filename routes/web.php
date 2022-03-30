@@ -26,7 +26,7 @@ Route::get('/createManufacture', function() {
     return view('createManufacture');
 });
 
-Route::get('/Manufactures', function() {
+Route::get('/manufactures', function() {
     return view('viewManufactures');
 });
 

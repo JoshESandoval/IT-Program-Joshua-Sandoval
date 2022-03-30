@@ -259,12 +259,12 @@ return [
         ],
         [
             'text' => 'Manufactures',
-            'url'  => 'Manufactures',
+            'url'  => 'manufactures',
             'icon' => 'fas fa-fw fa-building',
         ],
         [
             'text' => 'Create Manufacture',
-            'url'  => 'createManufacture',
+            'url'  => 'manufactures/create',
             'icon' => 'fas fa-fw fa-building',
         ],
     ],
