@@ -39,7 +39,7 @@
             <input type="tel" name="SaleNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="909-867-5309">
         </div>
 
-        <input type="submit" label="Submit">
+        <input type="submit" class="btn btn-default" label="Submit">
         <br>
         <br>
 @stop

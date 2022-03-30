@@ -39,14 +39,15 @@
         <div class="form-group">
         Memory
         <select class="btn btn-info" name="Memory" id="MemorySelect">
-
-            <option value ="16GB">16GB</option>
-            <option value = "32GB">32GB</option>
-            <option value = "64GB" >64GB</option>
+            <option value =  "8GB">  8GB</option>
+            <option value = "16GB"> 16GB</option>
+            <option value = "32GB"> 32GB</option>
+            <option value = "64GB"> 64GB</option>
             <option value ="128GB">128GB</option>
             <option value ="256GB">256GB</option>
-            <option value ="500">500GB</option>
-            <option value ="1TB">1TB</option>
+            <option value ="500GB">500GB</option>
+            <option value =  "1TB">  1TB</option>
+            <option value =  "2TB">  2TB</option>
         </select>
         </div>
 
