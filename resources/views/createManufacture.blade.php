@@ -30,15 +30,19 @@
 
         <div class="form-group">
             Email
+            <div class="col-sm-5">
             <input type="email" name="TechEmail" placeholder="BlackSmith@example.net"> 
+            </div>
         </div>
         <div class="form-group">
             Phone #
+
             <input type="tel" name="SaleNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="909-867-5309">
         </div>
 
         <input type="submit" label="Submit">
-
+        <br>
+        <br>
 @stop
 
 
