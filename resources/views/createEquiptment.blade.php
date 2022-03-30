@@ -31,6 +31,7 @@
         <h4>Display</h4>
         <input type ="input" name="Display" placeholder="LED"/>
         <br>
+        <br>
 
         <h4>Memory</h4>
         <select class="btn btn-info" name="Memory" id="MemorySelect">
@@ -52,13 +53,15 @@
             <option value = "32GB">32GB</option>
         </select>
         <br>
-
+        <br>
         <h4>Processor</h4>
             <input type="input" placeholder="intel...">
+        <br>
         <br>
 
         <h4>Graphics</h4>        
             <input type="input" placeholder="NVIDIA">
+        <br>
         <br>
 
 
