@@ -62,8 +62,11 @@
             <input type="number" name="Price" min="0" id="PriceArea">
             .00
         </div>
-            <br>
-         <br>
+        <h4>Date</h4>
+        <input type="date" name="PurchaseDate">
+
+        <br>
+        <br>
 
         <input class="btn btn-success" type="submit" label="Submit"/>
        
