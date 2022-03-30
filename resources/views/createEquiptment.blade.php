@@ -57,14 +57,12 @@
         <h1>Invoice Information</h1>
         <br>
         <h4>Price</h4>
-        
-        <div class="input-group">
-            <div class="input-group-addon">$</div>
-            <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
-            <div class="input-group-addon">.00</div>
-        </div>
+        <input type="number" name="Price" id="PriceArea">
+         <br>
+         <br>
 
         <input class="btn btn-success" type="submit" label="Submit"/>
+       
 
         
     </form>
