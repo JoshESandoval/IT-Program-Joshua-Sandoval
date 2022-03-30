@@ -51,6 +51,7 @@ class ManufactureController extends Controller
             'techEmail' => $request->TechEmail,
             'techNumber' => $request->TechNumber,
         ]);
+
         return view('manufactures');
     }
 
@@ -63,7 +64,7 @@ class ManufactureController extends Controller
     public function show($id)
     {
         $manufacture= Manufacture::find($id);
-        return view('manufacture.show',compact('todo'));
+        return view('manufacture.show',compact('manufacture'));
     }
 
     /**

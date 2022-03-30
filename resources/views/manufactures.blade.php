@@ -18,11 +18,11 @@
         
         @foreach($manufactures AS $manufacture)
         <tr>
-            <td>{{$manufacture->title}}</td>
-            <td>{{$manufacture->salesEmail}}</td>
-            <td>{{$manufacture->salesNumber}}</td>
-            <td>{{$manufacture->TechEmail}}</td>
-            <td>{{$manufacture->TechNumber}}</td>
+            <td>{{ $manufacture->title }}</td>
+            <td>{{ $manufacture->salesEmail}}</td>
+            <td>{{ $manufacture->salesNumber}}</td>
+            <td>{{ $manufacture->techEmail}}</td>
+            <td>{{ $manufacture->techNumber}}</td>
         </tr>
         @endforeach
          

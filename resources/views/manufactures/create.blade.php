@@ -7,7 +7,7 @@
 @stop
 
 @section('content')
-    <form method="post" class="horizoltal-group" action="{{ route('manufactures.store')}}">
+    <form method="post" class="horizoltal-group" onsubmit="alert('hi')" action="{{ route('manufactures.store') }}">
         @csrf
         <div class="form-group">
             Manufacture
@@ -30,13 +30,12 @@
 
         <div class="form-group">
             Email
-            <input class="col-sm-6" type="email" name="TechEmail" placeholder="BlackSmith@example.net"> 
-            
+            <input class="col-sm-6" type="email" name="techEmail" placeholder="BlackSmith@example.net"> 
         </div>
+        
         <div class="form-group">
             Phone #
-
-            <input type="tel" name="TechNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="909-867-5309">
+            <input type="tel" name="techNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="909-867-5309">
         </div>
 
         <input type="submit" class="btn btn-default" label="Submit">
