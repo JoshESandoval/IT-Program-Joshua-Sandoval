@@ -18,11 +18,12 @@
         
         @foreach($manufactures AS $manufacture)
         <tr>
-            <td><a class="btn btn-default" href="{{route('manufactures.show',['manufacture'=>$manufacture->id]) }}">{{ $manufacture->title }} </a></td>
+            <td>{{ $manufacture->title }} </a></td>
             <td>{{ $manufacture->salesEmail}}</td>
             <td>{{ $manufacture->salesNumber}}</td>
             <td>{{ $manufacture->techEmail}}</td>
             <td>{{ $manufacture->techNumber}}</td>
+            <td><a class="btn btn-default" href="{{ route('manufactures.show',['manufacture'=>$manufacture->id]) }}">view</a></td>
         </tr>
         @endforeach
          
