@@ -15,8 +15,8 @@
             <td>Tech Support Email</td>
             <td>Tech Support Number</td>
         </tr>
-        /*
-        @foreach($Manufactures AS $manufacture)
+        
+        @foreach($manufactures AS $manufacture)
         <tr>
             <td>{{$manufacture->title}}</td>
             <td>{{$manufacture->salesEmail}}</td>
@@ -25,7 +25,7 @@
             <td>{{$manufacture->techNumber}}</td>
         </tr>
         @endforeach
-        */
+        
     </table>
 @stop
 
