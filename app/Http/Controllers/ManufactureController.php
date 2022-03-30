@@ -48,8 +48,8 @@ class ManufactureController extends Controller
             'title'=> $request->title,
             'salesEmail' => $request->salesEmail,
             'salesNumber' => $request->salesNumber,
-            'TechEmail' => $request->TechEmail,
-            'TechNumber' => $request->TechNumber,
+            'techEmail' => $request->TechEmail,
+            'techNumber' => $request->TechNumber,
         ]);
         return $this->index();
     }
