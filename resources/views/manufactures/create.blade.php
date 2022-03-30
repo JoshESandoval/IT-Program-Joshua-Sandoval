@@ -7,7 +7,7 @@
 @stop
 
 @section('content')
-    <form name="manufactureI" class="horizoltal-group" onsubmit="display()">
+    <form name="manufactureI" class="horizoltal-group" route="{{ route('manufactuers.store')}}">
         @csrf
         <div class="form-group">
             Manufacture

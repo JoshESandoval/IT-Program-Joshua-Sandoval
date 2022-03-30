@@ -25,7 +25,7 @@ class ManufactureController extends Controller
      */
     public function create()
     {
-        return view('Manufacture.create');
+        return view('manufactures.create');
     }
 
     /**
@@ -36,7 +36,22 @@ class ManufactureController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validated = $request->validate([
+            'title' => 'required',
+            'salesEmail' => 'required',
+            'salesNumber' => 'required',
+            'techEmail' => 'required',
+            'techNumber' => 'required',
+        ]);
+
+        $manufacture = Manufacture::create([
+            'title'=> $request->title,
+            'salesEmail' => $request->salesEmail,
+            'salesNumber' => $request->salesNumber,
+            'TechEmail' => $request->TechEmail,
+            'TechNumber' => $request->TechNumber,
+        ]);
+        return $this->index();
     }
 
     /**
