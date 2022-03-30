@@ -21,8 +21,8 @@
             <td>{{$manufacture->title}}</td>
             <td>{{$manufacture->salesEmail}}</td>
             <td>{{$manufacture->salesNumber}}</td>
-            <td>{{$manufacture->techEmail}}</td>
-            <td>{{$manufacture->techNumber}}</td>
+            <td>{{$manufacture->TechEmail}}</td>
+            <td>{{$manufacture->TechNumber}}</td>
         </tr>
         @endforeach
          
@@ -33,8 +33,6 @@
 
 @section('js')
 <script>
-    $(document).ready(function() {
-        $('#table').DataTable();
-    } );
+    
 </script>
 @stop
