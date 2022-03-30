@@ -79,14 +79,15 @@
             <input type="number" name="Price" min="0" id="PriceArea">
             .00
         </div>
-        
+
         <div class="form-group">
             Purchase Date
             <input type="date" name="PurchaseDate">
         </div>
 
         <input class="btn btn-success" type="submit" label="Submit"/>
-        
+        <br>
+        <br>
     </form>
 @stop 
 
