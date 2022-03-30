@@ -18,7 +18,7 @@
         
         @foreach($customers AS $cust)
         <tr>
-            <td><a class="btn btn-default" href="{{ route('customers.show',['customers'=>$customer->id]) }}">{{ $manufacture->title }} </a></td>
+            <td><a class="btn btn-default" href="{{ route('customers.show',['customers'=>$cust->id]) }}">{{ $manufacture->title }} </a></td>
             <td>{{ $cust->id}}</td>
             <td>{{ $cust->fName}}</td>
             <td>{{ $cust->lName}}</td>
