@@ -15,14 +15,14 @@ return new class extends Migration
     {
         Schema::create('specs', function (Blueprint $table) {
             $table->id();
-            $tabel->bigInteger('equiptmentId');
-            $tabel->string('ram');
-            $tabel->string('memory');
-            $tabel->string('display');
-            $tabel->string('processor');
-            $tabel->string('graphics');
-            $tabel->string('misc');
-            $tabel->softDeletes();
+            $table->bigInteger('equiptmentId');
+            $table->string('ram');
+            $table->string('memory');
+            $table->string('display');
+            $table->string('processor');
+            $table->string('graphics');
+            $table->string('misc');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
