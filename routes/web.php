@@ -27,7 +27,7 @@ Route::get('/createManufacture', function() {
 });
 
 Route::get('/Manufactures', function() {
-    return view('createManufacture');
+    return view('viewManufactures');
 });
 
 Route::get('/db-test', function () {

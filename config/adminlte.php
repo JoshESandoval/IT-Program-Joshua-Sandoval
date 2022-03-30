@@ -259,7 +259,7 @@ return [
         ],
         [
             'text' => 'Manufactures',
-            'url'  => 'viewManufactures',
+            'url'  => 'Manufactures',
             'icon' => 'fas fa-fw fa-building',
         ],
         [
