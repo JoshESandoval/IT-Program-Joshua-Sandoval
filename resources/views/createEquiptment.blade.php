@@ -52,7 +52,15 @@
             <option value = "32GB">32GB</option>
         </select>
         <br>
+
+        <h4>Processor</h4>
+            <input type="input" placeholder="intel...">
         <br>
+
+        <h4>Graphics</h4>        
+            <input type="input" placeholder="NVIDIA">
+        <br>
+
 
         <h1>Invoice Information</h1>
         <br>
