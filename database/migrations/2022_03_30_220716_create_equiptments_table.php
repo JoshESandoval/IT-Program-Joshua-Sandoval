@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('equiptments', function (Blueprint $table) {
             $table->id();
-            $table->bigInteget('manufactureId');
+            $table->bigInteger('manufactureId');
             $table->bigInteger('userId');
             $table->string('catagory');
             $table->timestamps();

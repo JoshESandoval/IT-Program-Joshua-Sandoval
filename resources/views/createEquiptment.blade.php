@@ -19,10 +19,6 @@
             @foreach ($manufactures AS $manufacture)
                 <option value={{$manufacture->title}} > {{$manufacture->title}}
             @endforeach
-            <option value="Lenovo">Lenovo</option>
-            <option value="Apple">Apple</option>
-            <option value="Dell">Dell</option>
-            <option value="Microsoft">Microsoft</option>
         </select>
         </div>
 
