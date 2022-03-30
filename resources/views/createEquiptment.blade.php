@@ -17,7 +17,7 @@
         Manufacture
         <select class="btn btn-info" name="Type" id="TypeSelect">
             @foreach ($manufactures AS $manufacture)
-                <option value={{$manufacture->title}} > {{$manufacture->title}}
+                <option value={{$manufacture->id}} > {{$manufacture->title}}
             @endforeach
         </select>
         </div>
