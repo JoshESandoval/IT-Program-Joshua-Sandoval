@@ -11,18 +11,33 @@
         @csrf
         <div class="form-group">
             Manufacture
-            <input type="input" name="Manufacture" placeholder="Manufacture"> 
+            <input type="input" name="Manufacture" placeholder="Lenovo"> 
         </div>
+
         <h4>Sales Info</h4>
+
         <div class="form-group">
-            Phone Number            
-           <input type="input" name="Manufacture" placeholder="Manufacture"> 
+            Email          
+           <input type="email" name="SaleEmail" placeholder="JohnDough@exapmle.com"> 
+        </div>
+
+        <div class="form-group">
+            Phone #
+            <input type="tel" name="SaleNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="909-867-5309">
+        </div>
+
+        <h4>Tech Support Info</h4>
+
+        <div class="form-group">
+            Email
+            <input type="email" name="TechEmail" placeholder="BlackSmith@example.net"> 
         </div>
         <div class="form-group">
             Phone #
             <input type="tel" name="SaleNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="909-867-5309">
         </div>
 
+        <input type="submit" label="Submit">
 
 @stop
 
