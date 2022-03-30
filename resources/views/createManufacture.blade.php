@@ -30,7 +30,7 @@
 
         <div class="form-group">
             Email
-            <input type="email" name="TechEmail" placeholder="BlackSmith@example.net"> 
+            <input class="col-sm-6" type="email" name="TechEmail" placeholder="BlackSmith@example.net"> 
             
         </div>
         <div class="form-group">
