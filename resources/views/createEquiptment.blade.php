@@ -57,7 +57,7 @@
         <h1>Invoice Information</h1>
         <br>
         <h4>Price</h4>
-        <div>
+        <div class="col-xs-3">
             $
             <input type="number" name="Price" min="0" id="PriceArea">
             .00
