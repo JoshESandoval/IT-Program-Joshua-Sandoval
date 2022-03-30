@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ManufactureController;
+use App\Models\Manufacture;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,7 +19,7 @@ Route::get('/', function () {
 });
 
 Route::get('/createEquiptment', function () {
-    return view('createEquiptment', $manufactures);
+    return view('createEquiptment', $manufactures = Manufacture::all()) ;
 });
 
 Route::resource('/manufactures', ManufactureController::class); 
