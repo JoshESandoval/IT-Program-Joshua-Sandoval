@@ -27,7 +27,7 @@ Route::get('/createManufacture', function() {
 });
 
 
-Route::get('/manufactures', ManufactureController::Class); 
+Route::resource('/manufactures', ManufactureController::class); 
 
 Route::get('/db-test', function () {
     try {         
