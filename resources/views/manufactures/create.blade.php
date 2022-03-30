@@ -16,7 +16,7 @@
 
         <h4>Sales Info</h4>
 
-        <div class="form-group">
+        <div class="form-group"> 
             Email          
            <input class="col-sm-6" type="email" name="salesEmail" placeholder="JohnDough@exapmle.com"> 
         </div>
