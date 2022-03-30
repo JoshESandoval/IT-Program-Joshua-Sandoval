@@ -9,7 +9,7 @@
 @section('content')
     <h1>Basic Info</h1>
     <br>
-    <form  onsubmit="alert('hi')">
+    <form name="form1" onsubmit="display()">
         @csrf
 
         <h4>Manufacturer</h4>
@@ -80,7 +80,7 @@
         <br>
         <br>
 
-        <input class="btn btn-success" type="submit" value="Submit" label="Submit"/>
+        <input class="btn btn-success" type="submit" label="Submit"/>
         
     </form>
 @stop 
@@ -88,5 +88,9 @@
 @section('js')
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-
+    <script> 
+    function display(){
+        alert(document.form1);
+    }
+    </script>
 @stop
