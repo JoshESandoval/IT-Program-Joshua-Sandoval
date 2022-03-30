@@ -16,6 +16,9 @@
         <div class="form-group">
         Manufacture
         <select class="btn btn-info" name="Type" id="TypeSelect">
+            @foreach ($manufactures as $manufacture)
+                <option value={{$manufacture->title}} > {{$manufacture->title}}
+            @endforeach
             <option value="Lenovo">Lenovo</option>
             <option value="Apple">Apple</option>
             <option value="Dell">Dell</option>

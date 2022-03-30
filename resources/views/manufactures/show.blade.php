@@ -7,9 +7,9 @@
 @endsection
 
 @section('content')
-    <div>Name:{{$manufacture->title;}}</div>
-    <div>Sales Email:{{$manufacture->salesEmail;}}</div>
-    <div>Sales Phone Number:{{$manufacture->salesNumber;}}</div>
-    <div>Tech Support Email:{{$manufacture->techEmail;}}</div>
-    <div>Tech Support Number:{{$manufacture->techNumber;}}</div>
+    <div>Name: {{$manufacture->title;}}</div>
+    <div>Sales Email: {{$manufacture->salesEmail;}}</div>
+    <div>Sales Phone Number: {{$manufacture->salesNumber;}}</div>
+    <div>Tech Support Email: {{$manufacture->techEmail;}}</div>
+    <div>Tech Support Number: {{$manufacture->techNumber;}}</div>
 @stop

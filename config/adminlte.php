@@ -262,11 +262,6 @@ return [
             'url'  => 'manufactures',
             'icon' => 'fas fa-fw fa-building',
         ],
-        [
-            'text' => 'Create Manufacture',
-            'url'  => 'manufactures/create',
-            'icon' => 'fas fa-fw fa-building',
-        ],
     ],
 
     /*

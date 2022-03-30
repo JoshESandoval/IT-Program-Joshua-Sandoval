@@ -17,6 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/createEquiptment', function () {
+    return view('createEquiptment');
+});
 
 Route::resource('/manufactures', ManufactureController::class); 
 
