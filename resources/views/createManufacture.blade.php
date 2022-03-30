@@ -18,6 +18,12 @@
             Phone Number            
            <input type="input" name="Manufacture" placeholder="Manufacture"> 
         </div>
+        <div class="form-group">
+            Phone #
+            <input type="tel" name="SaleNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="909-867-5309">
+        </div>
+
+
 @stop
 
 
