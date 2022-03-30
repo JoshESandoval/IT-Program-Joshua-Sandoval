@@ -39,9 +39,10 @@
             <input type="tel" name="techNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="909-867-5309">
         </div>
 
-        <input type="submit" class="btn btn-default" label="Submit">
+        <input type="Submit" class="btn btn-default" label="Submit">
         <br>
         <br>
+    </form>
 @stop
 
 
