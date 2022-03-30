@@ -9,7 +9,7 @@
 @section('content')
     <h1>Basic Info</h1>
     <br>
-    <form  onsubmit="alert(Submit)">
+    <form  onsubmit="alert('hi')">
         @csrf
 
         <h4>Manufacturer</h4>
