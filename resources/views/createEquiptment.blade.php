@@ -22,8 +22,6 @@
             <option value="Microsoft">Microsoft</option>
         </select>
         </div>
-        <br>
-        <br>
 
         <div class="form-group">
         Category
@@ -37,7 +35,6 @@
         Display
         <input type ="input" name="Display" placeholder="LED"/>
         </div>
-        <br>
 
         <div class="form-group">
         Memory
@@ -51,7 +48,6 @@
             <option value ="500">500GB</option>
             <option value ="1TB">1TB</option>
         </select>
-        <br>
         </div>
 
         <div class="form-group">
@@ -64,12 +60,10 @@
         </select>
         </div>
 
-        <br>
         <div class="form-group">
             Processor
             <input type="input" placeholder="intel...">
         </div>
-        <br>
 
         <div class="form-group">
             Graphics        
@@ -85,14 +79,11 @@
             <input type="number" name="Price" min="0" id="PriceArea">
             .00
         </div>
-
-        <br>
+        
         <div class="form-group">
             Purchase Date
             <input type="date" name="PurchaseDate">
-
         </div>
-        <br>
 
         <input class="btn btn-success" type="submit" label="Submit"/>
         
