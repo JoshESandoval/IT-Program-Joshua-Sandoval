@@ -1,41 +1,32 @@
 @extends('adminlte::page')
 
-@section('title','Add Manufacture')
+@section('title','Add Customer')
 
 @section('content_header')
-    <h1>Add Manufacture</h1>    
+    <h1>Add Customer</h1>    
 @stop
 
 @section('content')
-    <form method="post" class="horizoltal-group"  action="{{ route('manufactures.store') }}">
+    <form method="post" class="horizoltal-group"  action="{{ route('customers.store') }}">
         @csrf
         <div class="form-group">
-            Manufacture
-            <input type="input" name="title" placeholder="Lenovo"> 
+            First Name :
+            <input type="input" name="fName" placeholder="Will"> 
         </div>
-
-        <h4>Sales Info</h4>
+        <div class="form-group">
+                Last Name :
+                <input type="input" name="lName" placeholder="Twist"> 
+            </div>
+        
 
         <div class="form-group"> 
             Email          
-           <input class="col-sm-6" type="email" name="salesEmail" placeholder="JohnDough@exapmle.com"> 
+           <input class="col-sm-6" type="email" name="cEmail" placeholder="JohnDough@exapmle.com"> 
         </div>
 
         <div class="form-group">
             Phone #
-            <input  type="tel" name="salesNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="909-867-5309">
-        </div>
-
-        <h4>Tech Support Info</h4>
-
-        <div class="form-group">
-            Email
-            <input class="col-sm-6" type="email" name="techEmail" placeholder="BlackSmith@example.net"> 
-        </div>
-        
-        <div class="form-group">
-            Phone #
-            <input type="tel" name="techNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="909-867-5309">
+            <input  type="tel" name="cNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="909-867-5309">
         </div>
 
         <input type="submit" class="btn btn-default" label="Submit">

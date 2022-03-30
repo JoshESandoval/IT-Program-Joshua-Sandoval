@@ -25,7 +25,7 @@ class CustomerController extends Controller
      */
     public function create()
     {
-        //
+        return view('customers.create');
     }
 
     /**
@@ -36,7 +36,23 @@ class CustomerController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validated = $request->validate([
+            'fName' => 'required',
+            'lName' => 'required',
+            'cEmail' => 'required',
+            'cNumber' => 'required',
+        ]);
+
+        $customer = Customer::create([
+            'fName'=> $request->fName,
+            'lName'=> $request->lName,
+            'cEmail' => $request->cEmail,
+            'cNumber' => $request->cNumber,
+            
+        ]);
+        
+        $customers = Customer::all();
+        return view('customers', compact('customers'));
     }
 
     /**
