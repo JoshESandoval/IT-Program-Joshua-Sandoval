@@ -7,33 +7,40 @@
 @stop
 
 @section('content')
-    <h1>Basic Info</h1>
-    <br>
-    <form name="form1" onsubmit="display()">
+    
+    <form name="form1" class="horizontal-group" onsubmit="display()">
         @csrf
-
-        <h4>Manufacturer*</h4>
+        <h1>Basic Info</h1>
+        <br>
+        
+        <div class="form-group">
+        Manufacture
         <select class="btn btn-info" name="Type" id="TypeSelect">
             <option value="Lenovo">Lenovo</option>
             <option value="Apple">Apple</option>
             <option value="Dell">Dell</option>
             <option value="Microsoft">Microsoft</option>
         </select>
+        </div>
         <br>
         <br>
-        <h4>Category*</h4>
+
+        <div class="form-group">
+        Category
         <input type="input" name="Catagory" placeholder="Tablet"/>
-        <br>
+        </div>
         <br>
 
         <h1>Specs</h1>
         
-        <h4>Display</h4>
+        <div class="form-group">
+        Display
         <input type ="input" name="Display" placeholder="LED"/>
-        <br>
+        </div>
         <br>
 
-        <h4>Memory</h4>
+        <div class="form-group">
+        Memory
         <select class="btn btn-info" name="Memory" id="MemorySelect">
 
             <option value ="16GB">16GB</option>
@@ -45,41 +52,46 @@
             <option value ="1TB">1TB</option>
         </select>
         <br>
-        <br>
+        </div>
 
-        <h4>Ram</h4>
+        <div class="form-group">
+        Ram
         <select class="btn btn-info" name="Ram" id="RamSelect">
             <option value = "4GB">4GB</option>
             <option value = "8GB">8GB</option>
             <option value = "16GB">16GB</option>
             <option value = "32GB">32GB</option>
         </select>
+        </div>
+
         <br>
-        <br>
-        <h4>Processor</h4>
+        <div class="form-group">
+            Processor
             <input type="input" placeholder="intel...">
-        <br>
+        </div>
         <br>
 
-        <h4>Graphics</h4>        
+        <div class="form-group">
+            Graphics        
             <input type="input" placeholder="NVIDIA">
-        <br>
+        </div>
         <br>
 
 
         <h1>Invoice Information</h1>
         <br>
-        <h4>Price</h4>
-        <div class="col-xs-2">
-            $
+        <div class="form-group">
+            Price  $
             <input type="number" name="Price" min="0" id="PriceArea">
             .00
         </div>
-        <br>
-        <h4>Date</h4>
-        <input type="date" name="PurchaseDate">
 
         <br>
+        <div class="form-group">
+            Purchase Date
+            <input type="date" name="PurchaseDate">
+
+        </div>
         <br>
 
         <input class="btn btn-success" type="submit" label="Submit"/>
