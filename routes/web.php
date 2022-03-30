@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/createEquiptment', function () {
-    return view('createEquiptment');
+    return view('createEquiptment', $manufactures);
 });
 
 Route::resource('/manufactures', ManufactureController::class); 
