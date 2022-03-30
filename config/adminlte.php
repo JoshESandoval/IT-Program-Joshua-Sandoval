@@ -262,6 +262,11 @@ return [
             'url'  => 'manufactures',
             'icon' => 'fas fa-fw fa-building',
         ],
+        [
+            'text' => 'Customers',
+            'url'  => 'customers',
+            'icon' => 'fas fa-fw fa-person',
+        ],
     ],
 
     /*

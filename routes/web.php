@@ -2,6 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ManufactureController;
+use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\EquiptmentController;
+use App\Http\Controllers\InvoiceController;
+use App\Http\Controllers\NoteController;
+use App\Http\Controllers\SpecController;
+
 use App\Models\Manufacture;
 use App\Models\Customer;
 use App\Models\Equiptment;
