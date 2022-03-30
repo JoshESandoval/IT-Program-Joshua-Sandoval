@@ -51,8 +51,9 @@ class ManufactureController extends Controller
             'techEmail' => $request->techEmail,
             'techNumber' => $request->techNumber,
         ]);
-
-        return view('manufactures');
+        
+        $manufactures = Manufacture::all();
+        return view('manufactures', compact('manufactures'));
     }
 
     /**
