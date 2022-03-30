@@ -18,21 +18,20 @@
 
         <div class="form-group">
             Email          
-           <input type="email" name="SaleEmail" placeholder="JohnDough@exapmle.com"> 
+           <input class="col-sm-6" type="email" name="SaleEmail" placeholder="JohnDough@exapmle.com"> 
         </div>
 
         <div class="form-group">
             Phone #
-            <input type="tel" name="SaleNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="909-867-5309">
+            <input  type="tel" name="SaleNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="909-867-5309">
         </div>
 
         <h4>Tech Support Info</h4>
 
         <div class="form-group">
             Email
-            <div class="col-sm-5">
             <input type="email" name="TechEmail" placeholder="BlackSmith@example.net"> 
-            </div>
+            
         </div>
         <div class="form-group">
             Phone #
