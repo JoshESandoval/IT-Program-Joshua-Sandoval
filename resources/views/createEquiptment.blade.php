@@ -9,7 +9,7 @@
 @section('content')
     <h1>Basic Info</h1>
     <br>
-    <form  method="post" action="{{}}">
+    <form  method="post" action="{{route('welcome')}}">
         @csrf
 
         <h4>Manufacturer</h4>
@@ -81,8 +81,6 @@
         <br>
 
         <input class="btn btn-success" type="submit" label="Submit"/>
-       
-
         
     </form>
 @stop 
