@@ -18,15 +18,6 @@ Route::get('/', function () {
 });
 
 
-Route::get('/createEquiptment', function() {
-    return view('createEquiptment');
-});
-
-Route::get('/createManufacture', function() {
-    return view('createManufacture');
-});
-
-
 Route::resource('/manufactures', ManufactureController::class); 
 
 Route::get('/db-test', function () {
