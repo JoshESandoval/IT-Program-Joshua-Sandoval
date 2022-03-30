@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ManufactureController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,9 +26,8 @@ Route::get('/createManufacture', function() {
     return view('createManufacture');
 });
 
-Route::get('/manufactures', function() {
-    return view('viewManufactures');
-});
+
+Route::get('/manufactures', ManufactureController::Class); 
 
 Route::get('/db-test', function () {
     try {         

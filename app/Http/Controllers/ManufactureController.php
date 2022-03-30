@@ -15,7 +15,7 @@ class ManufactureController extends Controller
     public function index()
     {
         $manufactures = Manufacture::all();
-        return view('Manufactures', compact('manufactures'));
+        return view('viewManufactures', compact('manufactures'));
     }
 
     /**
