@@ -25,3 +25,15 @@ Route::get('/createEquiptment', function() {
 Route::get('/createManufacture', function() {
     return view('createManufacture');
 });
+
+Route::get('/Manufactures', function() {
+    return view('createManufacture');
+});
+
+Route::get('/db-test', function () {
+    try {         
+         echo \DB::connection()->getDatabaseName();     
+    } catch (\Exception $e) {
+          echo 'None';
+    }
+});

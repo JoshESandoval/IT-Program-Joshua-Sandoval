@@ -258,6 +258,11 @@ return [
             'icon' => 'fas fa-fw fa-search',
         ],
         [
+            'text' => 'Manufactures',
+            'url'  => 'viewManufactures',
+            'icon' => 'fas fa-fw fa-building',
+        ],
+        [
             'text' => 'Create Manufacture',
             'url'  => 'createManufacture',
             'icon' => 'fas fa-fw fa-building',
