@@ -48,8 +48,8 @@ class ManufactureController extends Controller
             'title'=> $request->title,
             'salesEmail' => $request->salesEmail,
             'salesNumber' => $request->salesNumber,
-            'techEmail' => $request->TechEmail,
-            'techNumber' => $request->TechNumber,
+            'techEmail' => $request->techEmail,
+            'techNumber' => $request->techNumber,
         ]);
 
         return view('manufactures');
