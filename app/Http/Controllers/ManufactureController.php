@@ -65,7 +65,7 @@ class ManufactureController extends Controller
     public function show($id)
     {
         $manufacture= Manufacture::find($id);
-        return view('manufacture.show',compact('manufacture'));
+        return view('manufactures.show',compact('manufacture'));
     }
 
     /**
