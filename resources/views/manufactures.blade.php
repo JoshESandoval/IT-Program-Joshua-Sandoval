@@ -25,8 +25,9 @@
             <td>{{$manufacture->techNumber}}</td>
         </tr>
         @endforeach
-        <a href="{{ route('manufactures.create') }}" class="btn btn-default">Create</a> 
+         
     </table>
+    <a href="{{ route('manufactures.create') }}" class="btn btn-default">Create</a>
 @stop
 
 
