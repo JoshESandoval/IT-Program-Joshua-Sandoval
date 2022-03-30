@@ -36,11 +36,11 @@ Route::get('/createEquiptment', function () {
 });
 
 Route::resource('/manufactures', ManufactureController::class); 
-Route::resource('/customer', CustomerController::class);
-Route::resource('/equiptment', EquiptmentController::class);
-Route::resource('/invoice', InvoiceController::class);
-Route::resource('/note', NoteController::class);
-Route::resource('/spec', SpecController::class);
+Route::resource('/customers', CustomerController::class);
+Route::resource('/equiptments', EquiptmentController::class);
+Route::resource('/invoices', InvoiceController::class);
+Route::resource('/notes', NoteController::class);
+Route::resource('/specs', SpecController::class);
 
 Route::get('/db-test', function () {
     try {         
