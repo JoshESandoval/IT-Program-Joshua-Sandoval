@@ -19,7 +19,7 @@ Route::get('/', function () {
 });
 
 Route::get('/createEquiptment', function () {
-    return view('createEquiptment', $manufactures = Manufacture::all()) ;
+    return view('createEquiptment', [$manufactures => Manufacture::all()]) ;
 });
 
 Route::resource('/manufactures', ManufactureController::class); 
