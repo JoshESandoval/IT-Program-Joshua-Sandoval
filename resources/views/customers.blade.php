@@ -18,7 +18,7 @@
         
         @foreach($customers AS $cust)
         <tr>
-            <td><a class="btn btn-default" href="{{ route('manufactures.show',['customers'=>$customer->id]) }}">{{ $manufacture->title }} </a></td>
+            <td><a class="btn btn-default" href="{{ route('customers.show',['customers'=>$customer->id]) }}">{{ $manufacture->title }} </a></td>
             <td>{{ $cust->id}}</td>
             <td>{{ $cust->fName}}</td>
             <td>{{ $cust->lName}}</td>
@@ -29,7 +29,7 @@
         @endforeach
          
     </table>
-    <a href="{{ route('manufactures.create') }}" class="btn btn-default">Create</a>
+    <a href="{{ route('customers.create') }}" class="btn btn-default">Create</a>
 @stop
 
 
