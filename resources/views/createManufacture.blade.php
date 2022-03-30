@@ -13,6 +13,11 @@
             Manufacture
             <input type="input" name="Manufacture" placeholder="Manufacture"> 
         </div>
+        <h4>Sales Info</h4>
+        <div class="form-group">
+            Phone Number            
+           <input type="input" name="Manufacture" placeholder="Manufacture"> 
+        </div>
 @stop
 
 
