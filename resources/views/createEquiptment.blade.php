@@ -57,8 +57,12 @@
         <h1>Invoice Information</h1>
         <br>
         <h4>Price</h4>
-        <input type="number" name="Price" id="PriceArea">
-         <br>
+        <div>
+            $
+            <input type="number" name="Price" min="0" id="PriceArea">
+            .00
+        </div>
+            <br>
          <br>
 
         <input class="btn btn-success" type="submit" label="Submit"/>
