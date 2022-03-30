@@ -3,6 +3,12 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ManufactureController;
 use App\Models\Manufacture;
+use App\Models\Customer;
+use App\Models\Equiptment;
+use App\Models\Invoice;
+use App\Models\Note;
+use App\Models\Spec;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,6 +30,11 @@ Route::get('/createEquiptment', function () {
 });
 
 Route::resource('/manufactures', ManufactureController::class); 
+Route::resource('/customer', CustomerController::class);
+Route::resource('/equiptment', EquiptmentController::class);
+Route::resource('/invoice', InvoiceController::class);
+Route::resource('/note', NoteController::class);
+Route::resource('/spec', SpecController::class);
 
 Route::get('/db-test', function () {
     try {         
