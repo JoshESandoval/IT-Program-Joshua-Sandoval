@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('invoices', function (Blueprint $table) {
             $table->id();
-            $table->bigInterget('equiptmentId');
+            $table->bigInterger('equiptmentId');
             $table->interger('price');
             $table->date('purchaseDate');
             $table->timestamps();
