@@ -21,3 +21,7 @@ Route::get('/', function () {
 Route::get('/createEquiptment', function() {
     return view('createEquiptment');
 });
+
+Route::get('/createManufacture', function() {
+    return view('createManufacture');
+});

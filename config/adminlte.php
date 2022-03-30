@@ -258,9 +258,9 @@ return [
             'icon' => 'fas fa-fw fa-search',
         ],
         [
-            'text' => 'change_password',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-lock',
+            'text' => 'Create Manufacture',
+            'url'  => 'createManufacture',
+            'icon' => 'fas fa-fw fa-building',
         ],
     ],
 
