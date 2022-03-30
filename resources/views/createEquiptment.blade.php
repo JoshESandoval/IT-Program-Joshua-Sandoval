@@ -12,7 +12,7 @@
     <form name="form1" onsubmit="display()">
         @csrf
 
-        <h4>Manufacturer</h4>
+        <h4>Manufacturer*</h4>
         <select class="btn btn-info" name="Type" id="TypeSelect">
             <option value="Lenovo">Lenovo</option>
             <option value="Apple">Apple</option>
@@ -21,7 +21,7 @@
         </select>
         <br>
         <br>
-        <h4>Category</h4>
+        <h4>Category*</h4>
         <input type="input" name="Catagory" placeholder="Tablet"/>
         <br>
         <br>
@@ -41,6 +41,8 @@
             <option value = "64GB" >64GB</option>
             <option value ="128GB">128GB</option>
             <option value ="256GB">256GB</option>
+            <option value ="500">500GB</option>
+            <option value ="1TB">1TB</option>
         </select>
         <br>
         <br>
@@ -90,7 +92,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
     <script> 
     function display(){
-        alert(document.form1.Type.value, document.form1.PurchaseDate.value);
+        alert(document.form1.Display);
     }
     </script>
 @stop
