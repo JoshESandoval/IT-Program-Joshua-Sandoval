@@ -7,7 +7,7 @@
 @stop
 
 @section('content')
-    <table class='table table-hover'>
+    <table id="table" class='table table-hover'>
         <tr>
             <td>Name</td>
             <td>Sales Email</td>
@@ -15,7 +15,8 @@
             <td>Tech Support Email</td>
             <td>Tech Support Number</td>
         </tr>
-        @foreach($manufactures AS $manufacture)
+        /*
+        @foreach($Manufactures AS $manufacture)
         <tr>
             <td>{{$manufacture->title}}</td>
             <td>{{$manufacture->salesEmail}}</td>
@@ -24,6 +25,7 @@
             <td>{{$manufacture->techNumber}}</td>
         </tr>
         @endforeach
+        */
     </table>
 @stop
 
