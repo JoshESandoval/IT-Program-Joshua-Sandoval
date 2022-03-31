@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Equiptment;
+use App\Models\Manufacture;
 
 class EquiptmentController extends Controller
 {
@@ -24,8 +25,8 @@ class EquiptmentController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {
-        return view('equiptments.create');
+    {   $manufactures = Manufacture::all();
+        return view('equiptments.create', compact('manufactures'));
     }
 
     /**
