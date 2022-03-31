@@ -13,7 +13,6 @@
             <td>User</td>
             <td>Manufacture</td>
             <td>Category</td>
-            <td>Invoice ID</td>
         </tr>
         
         @foreach($equiptments AS $equiptment)
@@ -22,7 +21,7 @@
             <td>{{ $equiptment->userId}}</td>
             <td>{{ $equiptment->manufactureId}}</td>
             <td>{{ $equiptment->catagory}}</td>
-            <td>{{ $equiptment->invoice->id}}</td>
+            
         </tr>
         @endforeach
          
