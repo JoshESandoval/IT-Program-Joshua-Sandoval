@@ -75,7 +75,8 @@ class CustomerController extends Controller
      */
     public function edit($id)
     {
-        //
+        $customer = Customer::find($id);
+        return view('customers.edit',compact('customer'));
     }
 
     /**
@@ -87,7 +88,27 @@ class CustomerController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $validated = $request->validate([
+            'fName' => 'required',
+            'lName' => 'required',
+            'cEmail' => 'required',
+            'cNumber' => 'required',
+        ]);
+
+        $customer = Customer::find($id);
+
+        $customer->fName = $request->fName;
+        $customer->lName = $request->lName;
+        $customer->cEmail = $request->cEmail;
+        $customer->cNumber = $request->cNumber;
+        $customer->update();
+
+        return view('customers.show', compact('customer'));
+
+        ]);
+        
+        $customers = Customer::all();
+        return view('customers', compact('customers'));
     }
 
     /**
