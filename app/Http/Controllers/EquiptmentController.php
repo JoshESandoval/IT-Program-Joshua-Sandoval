@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
 use App\Models\Equiptment;
 use App\Models\Manufacture;
 use App\Models\Customer;
@@ -22,7 +23,7 @@ class EquiptmentController extends Controller
         $equiptments = Equiptment::all();
         $customers = Customer::all();
         $manufactures = Manufacture::all();
-        return view('equiptments', compact('equiptments'), compact('customers'), compact('manufactures'));
+        return view('equiptments', [ compact('equiptments'), compact('customers'), compact('manufactures')]);
     }
 
     /**
