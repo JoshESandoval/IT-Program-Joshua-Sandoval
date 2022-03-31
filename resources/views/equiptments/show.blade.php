@@ -10,4 +10,5 @@
     <div>ID: {{$equiptment->id;}}</div>
     <div>category: {{$equiptment->catagory;}}</div>
     <div>category: {{$manufactures[$equiptment->manufactureId]->title;}}</div>
+    <div>category: {{$customers[$equiptment->userId]->fName;}}</div>
 @stop

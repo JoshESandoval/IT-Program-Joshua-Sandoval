@@ -22,6 +22,7 @@
             <td>{{ $equiptment->manufactureId}}</td>
             <td>{{ $equiptment->catagory}}</td>
             
+            
         </tr>
         @endforeach
          
