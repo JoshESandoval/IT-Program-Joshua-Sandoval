@@ -18,12 +18,12 @@
             <td>Notes</td>
         </tr>
         
-        @foreach($equiptments AS $equi)
+        @foreach($equiptments AS $equiptment)
         <tr>
-            <td>{{ $equi->id}}</td>
-            <td>{{ $equi->userID}}</td>
-            <td>{{ $equi->manufactureID}}</td>
-            <td>{{ $equi->category}}</td>
+            <td>{{ $equiptment->id}}</td>
+            <td>{{ $equiptment->userID}}</td>
+            <td>{{ $equiptment->manufactureID}}</td>
+            <td>{{ $equiptment->category}}</td>
         </tr>
         @endforeach
          

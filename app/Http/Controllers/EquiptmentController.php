@@ -93,7 +93,8 @@ class EquiptmentController extends Controller
      */
     public function show($id)
     {
-        //
+        $equiptment= Equiptment::find($id);
+        return view('equiptment.show',compact('equiptment'));
     }
 
     /**
