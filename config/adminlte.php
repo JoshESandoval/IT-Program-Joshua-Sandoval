@@ -258,14 +258,19 @@ return [
             'icon' => 'fas fa-fw fa-search',
         ],
         [
+            'text' => 'Equiptmenr',
+            'url'  => 'equiptment',
+            'icon' => 'fas fa-fw fa-house-laptop',
+        ],
+        [
             'text' => 'Manufactures',
             'url'  => 'manufactures',
-            'icon' => 'fas fa-fw fa-address-card',
+            'icon' => 'fas fa-fw fa-building',
         ],
         [
             'text' => 'Customers',
             'url'  => 'customers',
-            'icon' => 'fas fa-fw fa-person',
+            'icon' => 'fas fa-fw fa-address-card',
         ],
     ],
 

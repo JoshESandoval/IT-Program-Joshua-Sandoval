@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Equiptment;
 use App\Models\Manufacture;
+use App\Models\Customer;
 
 class EquiptmentController extends Controller
 {
@@ -25,8 +26,10 @@ class EquiptmentController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {   $manufactures = Manufacture::all();
-        return view('equiptments.create', compact('manufactures'));
+    {   
+        $customers = Customer::all();
+        $manufactures = Manufacture::all();
+        return view('equiptments.create', compact('manufactures') ,compact('customers'));
     }
 
     /**

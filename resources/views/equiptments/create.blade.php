@@ -10,12 +10,22 @@
     
     <form name="form1" class="horizontal-group" onsubmit="display()">
         @csrf
+
+
+        <h1>Customer Information</h1>
+        <select class="btn btn-info" name="manufactureId" id="TypeSelect">
+            @foreach ($customers AS $customer)
+                <option value={{$customer->id}} > {{$customer->fName}}  {{$customer->lName}}
+            @endforeach
+        </select>
+        
+
         <h1>Basic Info</h1>
         <br>
         
         <div class="form-group">
         Manufacture
-        <select class="btn btn-info" name="Type" id="TypeSelect">
+        <select class="btn btn-info" name="manufactureId" id="TypeSelect">
             @foreach ($manufactures AS $manufacture)
                 <option value={{$manufacture->id}} > {{$manufacture->title}}
             @endforeach
@@ -24,7 +34,7 @@
 
         <div class="form-group">
         Category
-        <input type="input" name="Catagory" placeholder="Tablet"/>
+        <input type="input" name="catagory" placeholder="Tablet"/>
         </div>
         <br>
 
@@ -32,12 +42,12 @@
         
         <div class="form-group">
         Display
-        <input type ="input" name="Display" placeholder="LED"/>
+        <input type ="input" name="display" placeholder="LED"/>
         </div>
 
         <div class="form-group">
         Memory
-        <select class="btn btn-info" name="Memory" id="MemorySelect">
+        <select class="btn btn-info" name="memory" id="MemorySelect">
             <option value =  "8GB">  8GB</option>
             <option value = "16GB"> 16GB</option>
             <option value = "32GB"> 32GB</option>
@@ -52,7 +62,7 @@
 
         <div class="form-group">
         Ram
-        <select class="btn btn-info" name="Ram" id="RamSelect">
+        <select class="btn btn-info" name="ram" id="RamSelect">
             <option value = "4GB">4GB</option>
             <option value = "8GB">8GB</option>
             <option value = "16GB">16GB</option>
@@ -62,32 +72,43 @@
 
         <div class="form-group">
             Processor
-            <input type="input" placeholder="intel...">
+            <input type="input" name='processor' placeholder="intel...">
         </div>
 
         <div class="form-group">
             Graphics        
-            <input type="input" placeholder="NVIDIA">
+            <input type="input" name='graphics' placeholder="NVIDIA">
         </div>
         <br>
 
 
         <h1>Invoice Information</h1>
         <br>
+
+        <div class="form-group">
+            Location / Store
+            <input type="input" name="location" placeholder="BestBuy">
+        </div>
+
         <div class="form-group">
             Price  $
-            <input type="number" name="Price" min="0" id="PriceArea">
+            <input type="number" name="price" min="0" id="PriceArea">
             .00
         </div>
 
         <div class="form-group">
             Purchase Date
-            <input type="date" name="PurchaseDate">
+            <input type="date" name="purchaseDate">
         </div>
+
+
 
         <input class="btn btn-success" type="submit" label="Submit"/>
         <br>
         <br>
+
+
+
     </form>
 @stop 
 
