@@ -8,7 +8,7 @@
 
 @section('content')
     
-    <form name="form1" class="horizontal-group" onsubmit="display()">
+    <form name="form1" class="horizontal-group" onsubmit="display()" >
         @csrf
         <h1>Basic Info</h1>
         <br>
