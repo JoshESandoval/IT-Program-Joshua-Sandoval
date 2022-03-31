@@ -8,7 +8,7 @@
 
 @section('content')
     
-    <form method='post' action="{{ route('equiptments.store') }}"name="form1" class="horizontal-group" onsubmit="display()">
+    <form method='post' action="{{ route('equiptments.store') }}" onsubmit="alert('hi')" class="horizontal-group" >
         @csrf
 
 
