@@ -51,7 +51,7 @@ Route::get('/db-test', function () {
 });
 
 Route::get('/db-refresh', function () {
-    Artisan::call('migrate:refresh');
+    Artisan::call('migrate:reset');
     echo Artisan::output();
 });
 
