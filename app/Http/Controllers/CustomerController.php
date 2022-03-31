@@ -104,11 +104,7 @@ class CustomerController extends Controller
         $customer->update();
 
         return view('customers.show', compact('customer'));
-
-        ]);
         
-        $customers = Customer::all();
-        return view('customers', compact('customers'));
     }
 
     /**
