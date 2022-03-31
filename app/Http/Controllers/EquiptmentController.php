@@ -19,9 +19,10 @@ class EquiptmentController extends Controller
      */
     public function index()
     {
-        $manufactures = Manufacture::all();
+        
         $customers = Customer::all();
         $equiptments = Equiptment::all();
+        $manufactures = Manufacture::all();
         return view('equiptments', compact('equiptments'), compact('customers'), compact('manufactures'));
     }
 
