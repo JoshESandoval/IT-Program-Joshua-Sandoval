@@ -48,7 +48,6 @@ class CustomerController extends Controller
             'lName'=> $request->lName,
             'cEmail' => $request->cEmail,
             'cNumber' => $request->cNumber,
-            
         ]);
         
         $customers = Customer::all();
