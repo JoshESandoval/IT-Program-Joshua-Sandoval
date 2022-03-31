@@ -20,7 +20,7 @@
         <tr>
             <td>{{ $equiptment->id}}</td>
             <td>{{ $customers[$equiptment->userId]->fName}}</td>
-            <td>{{ $manufactures[$equiptment->manufactureId]->title}}</td>
+            <td>{{ $equiptment->manufactureId}}</td>
             <td>{{ $equiptment->catagory}}</td>
             <td>{{ $equiptment->invoiceId}}
         </tr>
