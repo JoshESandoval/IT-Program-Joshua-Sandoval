@@ -10,8 +10,5 @@ class Spec extends Model
 {
     protected $fillable =['equiptmentId','ram','memory','display','processor','graphics','misc'];
 
-    public function equiptment(){
-        return $this->belongsTo(Equiptment::class);
-    }
     use HasFactory,SoftDeletes;
 }

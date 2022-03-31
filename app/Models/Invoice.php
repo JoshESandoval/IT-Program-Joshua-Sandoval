@@ -11,9 +11,5 @@ class Invoice extends Model
 {
     protected $fillable=['equiptmentId','location','price','purchaseDate'];
 
-    public function equiptment(){
-        return $this.BelongsTo(Equiptment::class);
-    }
-
     use HasFactory,SoftDeletes;
 }
