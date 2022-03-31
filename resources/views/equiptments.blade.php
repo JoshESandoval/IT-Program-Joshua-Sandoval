@@ -21,9 +21,9 @@
         @foreach($equiptments AS $equiptment)
         <tr>
             <td>{{ $equiptment->id}}</td>
-            <td>{{ $equiptment->userId}}</td>
+            <td>{{ $customers->($equiptment->userId)->fName}}</td>
             <td>{{ $equiptment->manufactureId}}</td>
-            <td>{{ $equiptment->category}}</td>
+            <td>{{ $equiptment->catagory}}</td>
         </tr>
         @endforeach
          
