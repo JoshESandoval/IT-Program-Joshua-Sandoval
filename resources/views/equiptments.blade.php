@@ -9,10 +9,10 @@
 @section('content')
     <table id="table" class="table">
         <tr>
-            <th onclick="sortTable(0)">ID</th>
-            <th onclick="sortTable(1)">User</th>
-            <th onclick="sortTable(2)">Manufacture</th>
-            <th onclick="sortTable(3)">Category</th>
+            <th data-sort-default >ID</th>
+            <th data-sort-default >User</th>
+            <th data-sort-default >Manufacture</th>
+            <th data-sort-default >Category</th>
         </tr>
         
         @foreach($equiptments AS $equiptment)
