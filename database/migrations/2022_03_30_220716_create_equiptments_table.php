@@ -19,6 +19,7 @@ return new class extends Migration
             $table->bigInteger('userId');
             $table->string('catagory');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
