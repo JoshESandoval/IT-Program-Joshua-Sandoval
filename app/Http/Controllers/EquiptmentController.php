@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 use App\Models\Equiptment;
 use App\Models\Manufacture;
 use App\Models\Customer;
+use App\Models\Invoice;
+use App\Models\Spec;
+
 
 class EquiptmentController extends Controller
 {
@@ -40,7 +43,46 @@ class EquiptmentController extends Controller
      */
     public function store(Request $request)
     {
+        $validated = $request->validate([
+            'manufactureId'=>'required',
+            'userId'=>'required',
+            'catagory'=>'required',
+            'memory'=>'required',
+            'display'=>'required',
+            'misc'=>'required',
+            'location'=>'required',
+            'price'=>'required',
+            'date'=>'purchaseDate',
+        ]);
+
+        $equiptment = Manufacture::create([
+            'manufactureId'=> $request->manufactureId,
+            'userId'=> $request->userId,
+            'catagory'=>$request->catagory,
+        ]);
         
+        $invoice = Invoice::create([
+            'equiptmentId'=>$equiptment->id,
+            'location'=>$request->location,
+            'price'=>$request->price,
+            'purchaseDate'=>$request->purchaseDate,
+        ]);
+
+        $spec = Spec::create([
+            'equiptmentId'=>$equiptment->id,
+            'ram'=>$request->ram,
+            'memory'=>$request->memory,
+            'display'=>$request->display,
+            'processor'=>$request->processor,
+            'graphics'=>$request->graphics,
+            'misc'=>$request->misc,
+        ])
+
+        $equiptments = Equiptment::all();
+        $customers = Customer::all();
+        $manufactures = Manufacture::all();
+
+        return view('equiptment', compact('manufactures'),compact('manufactures') ,compact('customers'));
     }
 
     /**
