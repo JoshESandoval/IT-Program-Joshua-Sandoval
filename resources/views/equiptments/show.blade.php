@@ -9,5 +9,5 @@
 @section('content')
     <div>ID: {{$equiptment->id;}}</div>
     <div>category: {{$equiptment->catagory;}}</div>
-    <div>category: {{$manufactures[1]->title;}}</div>
+    <div>category: {{$manufactures[$equiptment->manufactureId]->title;}}</div>
 @stop
