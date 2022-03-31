@@ -103,7 +103,7 @@ class EquiptmentController extends Controller
         $manufactures= Manufacture::all();
         $equiptment = Equiptment::find($id);
         $customers = Customer::all();
-        return view('equiptments.show')->with(compact('equiptment'))->with(compact('manufactures'))->with(compact('customers'));
+        return view('equiptments.show')->with(compact('equiptment','manufactures','customers'));
     }
 
     /**
