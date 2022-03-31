@@ -10,20 +10,25 @@
     <table id="table" class='table table-hover'>
         <tr>
             <td>ID</td>
-            <td>Category</td>
+            <td>User</td>
             <td>Manufacture</td>
-            <td>Email</td>
-            <td>Number</td>
+            <td>Category</td>
+            <td>Specs</td>
+            <td>Invoice ID</td>
+            <td>Notes</td>
         </tr>
         
         @foreach($equiptments AS $equi)
         <tr>
-            <td><a class="btn btn-default" href="{{ route('equiptments.show',['equiptment'=>$equi->id]) }}">{{ $manufacture->title }} </a></td>
-            <td>{{ $cust->id}}</td>
-            <td>{{ $cust->fName}}</td>
-            <td>{{ $cust->lName}}</td>
-            <td>{{ $cust->cEmail}}</td>
-            <td>{{ $cust->cNUmber}}</td>
+            <td><a class="btn btn-default" href="{{ route('equiptments.show',['equiptment'=>$equi->id]) }}">{{ $equiptment->title }} </a></td>
+            <td>{{ $equi->id}}</td>
+            <td>{{ $equi->userID}}</td>
+            <td>{{ $equi->manufactureID}}</td>
+            <td>{{ $equi->category}}</td>
+            <td>{{ $equi->specs}}</td>
+            <td>{{ $equi->notes}}</td>
+
+            
             
         </tr>
         @endforeach

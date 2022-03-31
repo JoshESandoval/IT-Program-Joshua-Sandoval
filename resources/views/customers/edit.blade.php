@@ -9,7 +9,7 @@
 @section('content')
     <form method="post" class="horizoltal-group"  action="{{ route('customers.update', $customer->id)}}">
         @csrf
-        @method('PUT');
+        @method('PUT')
         <div class="form-group">
             First Name :
             <input type="input" name="fName" placeholder="Will" value="{{$customer->fName}}"> 

@@ -76,7 +76,7 @@ class ManufactureController extends Controller
      */
     public function edit($id)
     {
-        //
+        
     }
 
     /**
