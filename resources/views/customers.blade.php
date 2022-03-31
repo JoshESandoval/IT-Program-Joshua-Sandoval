@@ -22,7 +22,7 @@
             <td>{{ $customer->fName}}</td>
             <td>{{ $customer->lName}}</td>
             <td>{{ $customer->cEmail}}</td>
-            <td>{{ $customer->cNUmber}}</td>
+            <td>{{ $customer->cNumber}}</td>
             
         </tr>
         @endforeach

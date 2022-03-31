@@ -63,6 +63,7 @@ class EquiptmentController extends Controller
         ]);
         
         $invoice = Invoice::create([
+            'equiptmentId'=>$equiptment->id,
             'location'=>$request->location,
             'price'=>$request->price,
             'purchaseDate'=>$request->purchaseDate,
