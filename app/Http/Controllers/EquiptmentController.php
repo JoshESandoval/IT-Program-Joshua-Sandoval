@@ -96,8 +96,8 @@ class EquiptmentController extends Controller
      */
     public function show($id)
     {
-        $equiptment= Equiptment::find($id);
-        $equiptments = Equiptment::all();
+        $manufactures= Manufacture::all();
+        $equiptments = Equiptment::find($id);
         $customers = Customer::all();
         return view('equiptments.show',compact('equiptment'), compact('manufactures') ,compact('customers'));
     }
