@@ -9,11 +9,11 @@
 @section('content')
     
     <form method='post' action="{{ route('equiptments.store') }}"  class="horizontal-group" >
+
         @csrf
 
-
         <h1>Customer Information</h1>
-        <select class="btn btn-info" name="manufactureId" id="TypeSelect">
+        <select class="btn btn-info" name="userId" id="TypeSelect">
             @foreach ($customers AS $customer)
                 <option value={{$customer->id}} > {{$customer->fName}}  {{$customer->lName}} </option>
             @endforeach

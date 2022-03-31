@@ -21,8 +21,8 @@
         @foreach($equiptments AS $equiptment)
         <tr>
             <td>{{ $equiptment->id}}</td>
-            <td>{{ $equiptment->userID}}</td>
-            <td>{{ $equiptment->manufactureID}}</td>
+            <td>{{ $equiptment->userId}}</td>
+            <td>{{ $equiptment->manufactureId}}</td>
             <td>{{ $equiptment->category}}</td>
         </tr>
         @endforeach
