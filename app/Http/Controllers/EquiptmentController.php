@@ -40,7 +40,7 @@ class EquiptmentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**

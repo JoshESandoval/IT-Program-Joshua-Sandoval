@@ -19,14 +19,16 @@
             @endforeach
         </select>
         
+        <div id="customerDisplay">
+        </div>
         <br>
-        
+
         <h1>Basic Info</h1>
         <br>
         
         <div class="form-group">
         Manufacture
-        <select class="btn btn-info" name="manufactureId" id="TypeSelect">
+        <select class="btn btn-info" name="manufactureId" id="TypeSelect" >
             @foreach ($manufactures AS $manufacture)
                 <option value={{$manufacture->id}} > {{$manufacture->title}}
             @endforeach
@@ -38,6 +40,9 @@
         <input type="input" name="catagory" placeholder="Tablet"/>
         </div>
         <br>
+
+        
+
 
         <h1>Specs</h1>
         
@@ -64,6 +69,7 @@
         <div class="form-group">
         Ram
         <select class="btn btn-info" name="ram" id="RamSelect">
+            <option value = "--">--</option>
             <option value = "4GB">4GB</option>
             <option value = "8GB">8GB</option>
             <option value = "16GB">16GB</option>
@@ -74,13 +80,23 @@
         <div class="form-group">
             Processor
             <input type="input" name='processor' placeholder="intel...">
+            /*not necessary*/
         </div>
 
         <div class="form-group">
             Graphics        
             <input type="input" name='graphics' placeholder="NVIDIA">
+            /*not necessary*/
         </div>
         <br>
+
+        <div class="form-group">
+                Misc. Info        
+                <input type="input" name='misc' placeholder="any information not specified">
+                /*not necessary*/
+        </div>
+        <br>
+
 
 
         <h1>Invoice Information</h1>
@@ -101,7 +117,7 @@
             Purchase Date
             <input type="date" name="purchaseDate">
         </div>
-
+        <br>
 
 
         <input class="btn btn-success" type="submit" label="Submit"/>
@@ -120,5 +136,6 @@
     function display(){
         alert(document.form1.Display);
     }
+    let customer = document.getElementById('customerDisplay');
     </script>
 @stop

@@ -258,7 +258,7 @@ return [
             'icon' => 'fas fa-fw fa-search',
         ],
         [
-            'text' => 'Equiptmenr',
+            'text' => 'Equiptment',
             'url'  => 'equiptment',
             'icon' => 'fas fa-fw fa-house-laptop',
         ],
