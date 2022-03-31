@@ -7,7 +7,7 @@
 @stop
 
 @section('content')
-    <table id="table" class='table table-hover'>
+    <table sortable="true" id="table" class='table table-hover'>
         <tr>
             <td>ID</td>
             <td>User</td>
