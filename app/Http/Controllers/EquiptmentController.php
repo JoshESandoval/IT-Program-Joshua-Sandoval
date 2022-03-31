@@ -19,8 +19,9 @@ class EquiptmentController extends Controller
      */
     public function index()
     {
+        $customers = Customer::all();
         $equiptments = Equiptment::all();
-        return view('equiptments', compact('equiptments'));
+        return view('equiptments', compact('equiptments'),compact('customers'));
     }
 
     /**
