@@ -19,7 +19,7 @@
         <tr>
             <td><a class="btn btn-default" href="{{ route('equiptments.show',['equiptment'=>$equiptment->id]) }}">{{ $equiptment->id}}</a></td>
             <td>{{ $equiptment->userId}}</td>
-            <td>{{ $manufactures[$equiptment->manufactureId]->title}}</td>
+            <td>{{ $equiptment->manufactureId}}</td>
             <td>{{ $equiptment->catagory}}</td>
             
         </tr>

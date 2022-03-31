@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Equiptment extends Model
 {
@@ -12,5 +13,5 @@ class Equiptment extends Model
     public function note(){
         return $this->hasMany(Notes::class);
     }
-    use HasFactory;
+    use HasFactory,SoftDeletes;
 }
