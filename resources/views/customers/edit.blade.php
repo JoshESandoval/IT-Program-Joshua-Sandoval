@@ -1,14 +1,15 @@
 @extends('adminlte::page')
 
-@section('title','Add Customer')
+@section('title','Edit Customer')
 
 @section('content_header')
-    <h1>Add Customer</h1>    
+    <h1>Edit Customer</h1>    
 @stop
 
 @section('content')
     <form method="post" class="horizoltal-group"  action="{{ route('customers.update', $customer->id)}}">
         @csrf
+        @method('PUT');
         <div class="form-group">
             First Name :
             <input type="input" name="fName" placeholder="Will" value="{{$customer->fName}}"> 
