@@ -16,14 +16,13 @@
             <td>Number</td>
         </tr>
         
-        @foreach($customers AS $cust)
+        @foreach($customers AS $customer)
         <tr>
-            <td><a class="btn btn-default" href="{{ route('customers.show',['customers'=>$cust->id]) }}">{{ $manufacture->title }} </a></td>
-            <td>{{ $cust->id}}</td>
-            <td>{{ $cust->fName}}</td>
-            <td>{{ $cust->lName}}</td>
-            <td>{{ $cust->cEmail}}</td>
-            <td>{{ $cust->cNUmber}}</td>
+            <td><a class="btn btn-default" href="{{ route('customers.show',['customer'=>$customer->id]) }}">{{ $customer->id}}</a></td>
+            <td>{{ $customer->fName}}</td>
+            <td>{{ $customer->lName}}</td>
+            <td>{{ $customer->cEmail}}</td>
+            <td>{{ $customer->cNUmber}}</td>
             
         </tr>
         @endforeach
