@@ -12,5 +12,5 @@
     <div>Last Name: {{$customer->slName;}}</div>
     <div>Email: {{$customer->cEmail;}}</div>
     <div>Phone : {{$customer->cNumber;}}</div>
-    <a class='btn btn-default' href="{{route('customers.edit', ['customer'=>$customer->id) }}">Edit</a>
+    <a class='btn btn-default' href="{{route('customers.edit', ['customer'=>$customer->id]) }}">Edit</a>
     @stop
