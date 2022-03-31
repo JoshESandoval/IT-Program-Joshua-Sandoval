@@ -55,7 +55,7 @@ class EquiptmentController extends Controller
             'date'=>'purchaseDate',
         ]);
 
-        $equiptment = Manufacture::create([
+        $equiptment = Equiptment::create([
             'manufactureId'=> $request->manufactureId,
             'userId'=> $request->userId,
             'catagory'=>$request->catagory,
@@ -94,7 +94,7 @@ class EquiptmentController extends Controller
     public function show($id)
     {
         $equiptment= Equiptment::find($id);
-        return view('equiptment.show',compact('equiptment'));
+        return view('equiptments.show',compact('equiptment'));
     }
 
     /**
