@@ -20,16 +20,10 @@
         
         @foreach($equiptments AS $equi)
         <tr>
-            <td><a class="btn btn-default" href="{{ route('equiptments.show',['equiptment'=>$equi->id]) }}">{{ $equiptment->title }} </a></td>
             <td>{{ $equi->id}}</td>
             <td>{{ $equi->userID}}</td>
             <td>{{ $equi->manufactureID}}</td>
             <td>{{ $equi->category}}</td>
-            <td>{{ $equi->specs}}</td>
-            <td>{{ $equi->notes}}</td>
-
-            
-            
         </tr>
         @endforeach
          
