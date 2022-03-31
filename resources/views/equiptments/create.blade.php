@@ -15,11 +15,12 @@
         <h1>Customer Information</h1>
         <select class="btn btn-info" name="manufactureId" id="TypeSelect">
             @foreach ($customers AS $customer)
-                <option value={{$customer->id}} > {{$customer->fName}}  {{$customer->lName}}
+                <option value={{$customer->id}} > {{$customer->fName}}  {{$customer->lName}} </option>
             @endforeach
         </select>
         
-
+        <br>
+        
         <h1>Basic Info</h1>
         <br>
         
