@@ -260,7 +260,7 @@ return [
         [
             'text' => 'Manufactures',
             'url'  => 'manufactures',
-            'icon' => 'fas fa-fw fa-building',
+            'icon' => 'fas fa-fw fa-address-card',
         ],
         [
             'text' => 'Customers',
