@@ -7,12 +7,12 @@
 @stop
 
 @section('content')
-    <table id="table" >
+    <table id="table" class="table table-select">
         <tr>
-            <th onClick="sortTable(0)">ID</th>
-            <th onClick="sortTable(1)">User</th>
-            <th onClick="sortTable(2)">Manufacture</th>
-            <th onClick="sortTable(3)">Category</th>
+            <th onclick="sortTable(0)">ID</th>
+            <th onclick="sortTable(1)">User</th>
+            <th onclick="sortTable(2)">Manufacture</th>
+            <th onclick="sortTable(3)">Category</th>
         </tr>
         
         @foreach($equiptments AS $equiptment)
