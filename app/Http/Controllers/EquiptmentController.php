@@ -21,7 +21,7 @@ class EquiptmentController extends Controller
     {
         $customers = Customer::all();
         $equiptments = Equiptment::all();
-        return view('equiptments', compact('equiptments'),compact('customers'));
+        return view('equiptments', compact('equiptments'), compact('customers'));
     }
 
     /**

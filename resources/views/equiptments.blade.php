@@ -13,17 +13,16 @@
             <td>User</td>
             <td>Manufacture</td>
             <td>Category</td>
-            <td>Specs</td>
             <td>Invoice ID</td>
-            <td>Notes</td>
         </tr>
         
         @foreach($equiptments AS $equiptment)
         <tr>
             <td>{{ $equiptment->id}}</td>
             <td>{{ $customers[$equiptment->userId]->fName}}</td>
-            <td>{{ $equiptment->manufactureId}}</td>
+            <td>{{ $manufactures[$equiptment->manufactureId]->title}}</td>
             <td>{{ $equiptment->catagory}}</td>
+            <td>{{ $equiptment->invoiceId}}
         </tr>
         @endforeach
          
