@@ -28,8 +28,8 @@
          
     </table>
     <a href="{{ route('equiptments.create') }}" class="btn btn-default">Create</a>
-    <script>
-            function sortTable(n){
+    <script
+            function sortTable(n) =>{
                 vat table,rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
                 table = document.getElementById('table');
                 switching=true;
@@ -70,8 +70,8 @@
         
                 }
         
-            };
-    </script>
+            }
+    ></script>
 @stop
 
 
