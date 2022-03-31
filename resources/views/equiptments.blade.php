@@ -11,14 +11,14 @@
         <tr>
             <th data-sort-default >ID</th>
             <th data-sort-default >User</th>
-            <th data-sort-default >Manufacture</th>
+            <th data-sort-default >Manufacture Id</th>
             <th data-sort-default >Category</th>
         </tr>
         
         @foreach($equiptments AS $equiptment)
         <tr>
             <td><a class="btn btn-default" href="{{ route('equiptments.show',['equiptment'=>$equiptment->id]) }}">{{ $equiptment->id}}</a></td>
-            <td>{{ $equiptment->userId}}</td>
+            <td>{{ $customer[$equiptment->userId]->fName}}</td>
             <td>{{ $equiptment->manufactureId}}</td>
             <td>{{ $equiptment->catagory}}</td>
             
