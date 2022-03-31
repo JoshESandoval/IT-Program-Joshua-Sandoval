@@ -27,7 +27,7 @@
         @endforeach
          
     </table>
-    <a href="{{ route('equiptments.create') }}" class="btn btn-default">Create</a>\
+    <a href="{{ route('equiptments.create') }}" class="btn btn-default">Create</a>
     <script>
             function sortTable(n){
                 vat table,rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
@@ -70,7 +70,7 @@
         
                 }
         
-            }
+            };
     </script>
 @stop
 
