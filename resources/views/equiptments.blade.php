@@ -22,7 +22,7 @@
             <td>{{ $equiptment->userId}}</td>
             <td>{{ $equiptment->manufactureId}}</td>
             <td>{{ $equiptment->catagory}}</td>
-            <td>{{ $equiptment->invoiceId}}
+            <td>{{ $equiptment->invoice->id}}</td>
         </tr>
         @endforeach
          
