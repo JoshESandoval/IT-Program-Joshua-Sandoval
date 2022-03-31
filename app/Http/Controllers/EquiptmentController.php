@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Models\Equiptment;
+use App\Models\Equiptment; 
 use App\Models\Manufacture;
-use App\Models\Customer;
+use App\Models\Customer; 
 use App\Models\Invoice;
 use App\Models\Spec;
 
