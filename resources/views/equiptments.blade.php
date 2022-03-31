@@ -21,7 +21,7 @@
         @foreach($equiptments AS $equiptment)
         <tr>
             <td>{{ $equiptment->id}}</td>
-            <td>{{ $customers::find($equiptment->userId)->fname}}</td>
+            <td>{{ $customers[$equiptment->userId]->fname}}</td>
             <td>{{ $equiptment->manufactureId}}</td>
             <td>{{ $equiptment->catagory}}</td>
         </tr>
