@@ -7,14 +7,7 @@
 @stop
 
 @section('content')
-	<h4>Search Equiptment By</h4>
-		<p>User?</p>
-		<p>Category?</p>
-		<p>Manufacture?</p>
-	<h4>Create Equiptment</h4>
-	<h3>People</h3>
-		<h4>Support</h4>
-		<h4>Users/IT</h4>
+	
 @stop
 
 @section('css')
