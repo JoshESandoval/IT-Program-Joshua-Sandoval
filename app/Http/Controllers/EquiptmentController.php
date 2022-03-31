@@ -76,13 +76,13 @@ class EquiptmentController extends Controller
             'processor'=>$request->processor,
             'graphics'=>$request->graphics,
             'misc'=>$request->misc,
-        ])
+        ]);
 
         $equiptments = Equiptment::all();
         $customers = Customer::all();
         $manufactures = Manufacture::all();
 
-        return view('equiptment', compact('manufactures'),compact('manufactures') ,compact('customers'));
+        return view('equiptments', compact('manufactures'),compact('manufactures') ,compact('customers'));
     }
 
     /**
