@@ -26,7 +26,7 @@ class EquiptmentController extends Controller
 
         $manufactures = Manufacture::all();
 
-        return view('equiptments', compact('equiptments','customers','equiptment'));
+        return view('equiptments', compact('equiptments','customers','manufactures'));
 
     }
 
