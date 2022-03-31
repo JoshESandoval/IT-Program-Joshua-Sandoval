@@ -9,4 +9,6 @@
 @section('content')
     <div>ID: {{$equiptment->id;}}</div>
     <div>category: {{$equiptment->category;}}</div>
+    <div>category: {{$equiptment->category;}}</div>
+
 @stop
