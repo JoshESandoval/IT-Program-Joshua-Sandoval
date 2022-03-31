@@ -19,7 +19,7 @@
         @foreach($equiptments AS $equiptment)
         <tr>
             <td>{{ $equiptment->id}}</td>
-            <td>{{ $customers[$equiptment->userId]->fName}}</td>
+            <td>{{ $equiptment->userId}}</td>
             <td>{{ $equiptment->manufactureId}}</td>
             <td>{{ $equiptment->catagory}}</td>
             <td>{{ $equiptment->invoiceId}}
