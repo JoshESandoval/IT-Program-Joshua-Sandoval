@@ -7,7 +7,7 @@
 @stop
 
 @section('content')
-    <table id="table" class='table table-hover'>
+    <table id="table" >
         <tr>
             <th onClick="sortTable(0)">ID</th>
             <th onClick="sortTable(1)">User</th>
