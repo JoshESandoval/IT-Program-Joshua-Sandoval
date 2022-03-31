@@ -34,7 +34,7 @@
         @endforeach
          
     </table>
-    <a href="{{ route('customers.create') }}" class="btn btn-default">Create</a>
+    <a href="{{ route('equiptments.create') }}" class="btn btn-default">Create</a>
 @stop
 
 
