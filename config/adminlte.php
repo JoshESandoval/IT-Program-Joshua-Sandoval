@@ -259,8 +259,8 @@ return [
         ],
         [
             'text' => 'Equiptment',
-            'url'  => 'equiptment',
-            'icon' => 'fas fa-fw fa-house-laptop',
+            'url'  => 'equiptments',
+            'icon' => 'fas fa-fw fa-backpack',
         ],
         [
             'text' => 'Manufactures',
