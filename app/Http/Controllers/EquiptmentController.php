@@ -97,7 +97,9 @@ class EquiptmentController extends Controller
     public function show($id)
     {
         $equiptment= Equiptment::find($id);
-        return view('equiptments.show',compact('equiptment'));
+        $equiptments = Equiptment::all();
+        $customers = Customer::all();
+        return view('equiptments.show',compact('equiptment'), compact('manufactures') ,compact('customers'));
     }
 
     /**
